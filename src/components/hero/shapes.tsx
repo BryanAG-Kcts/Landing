@@ -1,7 +1,7 @@
 'use client'
 
 import { Suspense } from 'react'
-import { Environment, ContactShadows } from '@react-three/drei'
+import { Environment, ContactShadows, OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { Geometries } from '../geometry'
 
@@ -16,6 +16,13 @@ export const Shapes = (): JSX.Element => {
         </Suspense>
 
         <Environment preset='studio' />
+        <OrbitControls
+          enableDamping
+          enablePan={false}
+          enableZoom={false}
+          dampingFactor={0.1}
+          rotateSpeed={0.5}
+        />
       </Canvas>
     </div>
   )

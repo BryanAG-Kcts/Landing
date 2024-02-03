@@ -1,0 +1,15 @@
+.btnFill {
+    @apply border-2 p-2 rounded-lg relative overflow-hidden z-10;
+}
+.btnFill::before {
+    content: "";
+    @apply block bg-amber-400 absolute bottom-0 left-0 h-full w-full translate-y-full transition-transform -z-10;
+}
+
+.btnFill:hover::before {
+    @apply translate-y-0;
+}
+
+.btnFill:hover {
+    @apply font-bold text-black;
+}

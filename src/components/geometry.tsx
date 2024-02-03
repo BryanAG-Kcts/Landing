@@ -90,13 +90,13 @@ export const Geometries = (): JSX.Element => {
       name: 'TorusKnot'
     },
     {
-      position: [2.75, -1.5, 6],
+      position: [2.75, -1.5, -4],
       r: 0.3,
-      geometry: new THREE.TorusGeometry(0.4, 0.2, 80, 10),
+      geometry: new THREE.TorusGeometry(0.4, 0.2, 80, 25),
       name: 'Torus'
     },
     {
-      position: [-3, -1.5, 6],
+      position: [-3, -1.5, -4],
       r: 0.3,
       geometry: new THREE.DodecahedronGeometry(0.7),
       name: 'DodeCahedron'
