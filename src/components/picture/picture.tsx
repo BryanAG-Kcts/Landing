@@ -2,12 +2,12 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef } from 'react'
+gsap.registerPlugin(ScrollTrigger)
 
 export const Picture = (): JSX.Element => {
   const section = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
     const ctx = gsap.context(() => {
       const element = section.current
 
@@ -25,7 +25,7 @@ export const Picture = (): JSX.Element => {
             ease: 'elastic.out(1, 0.2)',
             duration: 0.5,
             scrollTrigger: {
-              trigger: element,
+              trigger: section.current,
               start: 'top 80%',
               end: '+=300'
             }

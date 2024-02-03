@@ -7,7 +7,7 @@ import { Geometries } from '../geometry'
 
 export const Shapes = (): JSX.Element => {
   return (
-    <div className='aspect-video overflow-hidden flex-1 md:flex-[1.5]'>
+    <div className='aspect-square md:aspect-video overflow-hidden flex-1 md:flex-[1.5]'>
       <Canvas shadows gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 20], fov: 30, near: 1, far: 40 }}>
 
         <Suspense>

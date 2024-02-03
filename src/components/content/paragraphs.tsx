@@ -15,7 +15,7 @@ export function Paragraph ({ pr, index }: IParagraph): JSX.Element {
   return (
     <section className={`flex ${isRight}`}>
       <article className='flex flex-col gap-3 max-w-3xl'>
-        <h3 className='text-lg md:text-2xl font-semibold'>{title}</h3>
+        <h3 className='text-xl md:text-2xl font-semibold'>{title}</h3>
         <p>{content}</p>
         <button className={styles.btnFill}>{btn}</button>
       </article>
